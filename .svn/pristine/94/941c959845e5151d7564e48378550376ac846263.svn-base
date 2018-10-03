@@ -1,0 +1,67 @@
+<%@ page language="java" contentType="text/html; charset=ISO-8859-1"
+    pageEncoding="ISO-8859-1"%>
+<!DOCTYPE html>
+<html>
+<head>
+<meta charset="ISO-8859-1">
+<title>Insert title here</title>
+</head>
+<body>
+	<h1>Add Customer</h1>
+	<form method="post" action="http://localhost:8080/TestServletHTML/CustomerController">
+		<input type="hidden" name="source" value="addCustomer" />
+		<input type="hidden" name="action" value="addCustomer" />
+		<table border="1">
+			<tr>
+				<td>First Name : </td>
+				<td><input type="text" name="txtFirstName" id="txtFirstName" /></td>
+			</tr>
+			<tr>
+				<td>Last Name : </td>
+				<td><input type="text" name="txtLastName" id="txtLastName" /></td>
+			</tr>
+			<tr>
+				<td>Contact : </td>
+				<td><input type="text" name="txtContact" id="txtContact" /></td>
+			</tr>
+			<tr>
+				<td>Gender : </td>
+				<td><input type="radio" name="radGender" id="radGender" value="male" />Male</td>
+				<td><input type="radio" name="radGender" id="radGender" value="female" />Female</td>
+			</tr>
+			<tr>
+				<td>City</td>
+				<td>
+					<select name="city" id="city">
+						<option value="0">--Select--</option>
+						<option value="Mumbai">Mumbai</option>
+						<option value="Kolkota">Kolkota</option>
+						<option value="Chennai">Chennai</option>
+					</select>
+				</td>
+			</tr>
+			<tr>
+				<td>Is Married? : </td>
+				<td><input type="checkbox" name="chkMarried" id="chkMarried" /></td>
+			</tr>
+			<tr>
+				<td>Hobbies</td>
+				<td>
+					<select name="selHobbies" multiple="multiple" id="selHobbies">
+						<option value="0">--Select--</option>
+						<option value="Dancing">Dancing</option>
+						<option value="Fencing">Fencing</option>
+						<option value="Gaming">Gaming</option>
+					</select>
+				</td>
+			</tr>
+			<tr>
+				<td colspan="2" align="center">
+					<input type="submit" name="btnSubmit" id="btnSubmit" value="Submit" />
+				</td>	
+			</tr>
+		</table>
+	</form>
+</body>
+</body>
+</html>
